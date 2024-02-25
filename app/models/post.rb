@@ -3,6 +3,7 @@ class Post < ApplicationRecord
   validate :body_or_link
 
   belongs_to :user
+  has_many :comments
 
   private
   def body_or_link
